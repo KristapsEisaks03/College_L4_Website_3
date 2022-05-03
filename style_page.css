@@ -1,0 +1,135 @@
+body{
+    background-image: linear-gradient(to right, rgb(197, 19, 197) , rgb(253, 253, 227));
+}
+h1{
+
+    font-size:  500%;
+    color: rgb(219, 180, 255);
+    text-shadow: 4px 3px grey;
+    text-align: center;
+    margin: 0;
+    margin-top: 1%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.37);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    border-radius: 50px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.37);
+    clip-path: inset(0px -30px 0px -15px);
+}
+
+p{
+    width: 100%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: beige;
+}
+
+.Flexbox > button{
+    border: 0;
+    width: 20%;
+    height: 5vh;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+  
+
+    color :white;
+    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+    box-shadow: 5px 5px 30px black;
+    cursor: pointer;
+    background-size: 200%;
+    transition: 1s;
+    background-position: 0% 100%;
+}
+
+.Flexbox > button:hover{
+    transition: 0.5s;
+    background-position: right center;
+}
+
+
+.Spacer_element{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-bottom: 5px solid rgb(56, 56, 56);
+    border-radius: 100px;
+
+}
+
+img{
+    width: 50%;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 500%;
+    margin: 0;
+
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image:radial-gradient(ellipse , #3bd1ff, #d400ff);
+    background-size: 400% 400%;
+    animation: TurnRadialGradient_H2 5s ease infinite;
+    
+}
+
+@keyframes TurnRadialGradient_H2 {
+	0% {
+		background-position: 0% 100%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 100%;
+	}
+}
+
+
+.Flexbox_Advanced{
+    --heightOfFlex:auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+.Flexbox_Advanced > img{
+    width: 30%;
+}
+
+.Flexbox_Advanced > :is(img,div){
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 35%;
+    min-width: 460px;
+}
+
+
+.Flexbox_Advanced > div{
+    background-color: rgba(85, 140, 212,0.5);
+    border-radius: 20px;
+}
+
+
+.Vertical_Line{
+    width: 5px;
+
+    border-radius: 50px;
+    background-color: black;
+}
+.Flexbox_Advanced > div > ul > li{
+    padding-right: 1%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: large;
+}
+
+

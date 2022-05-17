@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Square+Peg&display=swap" rel="stylesheet">
+
+
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="_img/MainTabLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Crispy VR</title>
+</head>
+<body>
+    <div class="Flexbox">
+        <div class="Spacer"></div>
+        <div class="Nav Flexbox">   
+            <div class="Flexbox" style="height: 50%;">
+                <div class="Image">
+                </div>
+                <button onclick="MoveWebsite('Home.html')">Home</button>
+                <button onclick="MoveWebsite('Valve Index.html')">Valve Index</button>
+                <button onclick="MoveWebsite('Quest 2.html')">Quest 2</button>
+            </div>
+            <div class ="Columned" style="height:50%;">
+                <button onclick="MoveWebsite('Login.html')">Login</button>
+                <button onclick="MoveWebsite('Register.html')">Register</button>
+
+            </div>
+            
+        </div>
+
+    <iframe id="Main_Body_iFrame" src="Home.html" frameborder="0"></iframe>
+        
+    </div>
+</body>
+</html>

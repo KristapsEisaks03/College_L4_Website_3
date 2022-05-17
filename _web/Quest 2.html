@@ -1,0 +1,118 @@
+
+<head>
+    <link rel="stylesheet" href="style_page.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Square+Peg&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="Flexbox" style="align-items: center;justify-content: center;">
+        <h1>Quest 2</h1>
+    </div>
+    <p>Quest 2 is one of the greatest headsets built! <br>Providing great features for the lowest prices and same time allowing wireless connectivity and is competitive with expensive headset Valve Index!!!</p>
+   <!-- <div class="Image Paralax" style="background-image: url('_img/Valve\ Index/vrkit.png');">
+        
+    </div> -->
+
+<div class="Image Paralax Flexbox Flexbox_Advanced" style="margin-bottom: 1%;background-image: url('_img/Quest\ 2/quest 2.png');">
+<div style="width: 100%;background-color: rgba(255, 197, 242, 0.795);">
+    <br>
+    <div class="Flexbox" style="justify-content: center;">
+        <button onclick="window.open('https://store.facebook.com/gb/quest/products/quest-2/', '_blank')">Get it now!!!</button>
+    </div><br>
+
+    <div class="Spacer_element"></div>
+    <div class="Flexbox" style="align-items: center;justify-content: center;">
+        <h2>The Headset</h2>
+    </div>
+
+    <div id="DisplayHeadset"class="Flexbox Flexbox_Advanced">
+        <img src="_img/Quest 2/Headset.png" >
+
+        <div>
+            <ul>
+                <li>Do something</li>
+            </ul>
+        </div>
+    </div>
+
+<!-- CONTROLLERS -->
+    
+    <br><div class="Spacer_element"></div><br>
+    <div class="Flexbox" style="align-items: center;justify-content: center;">
+        <h2>The Controllers</h2>
+    </div>
+    <div id="DisplayControllers"class="Flexbox Flexbox_Advanced" style="flex-direction: row-reverse;">
+        <img onload="" src="_img/Quest 2/Controllers.png" >
+
+        <div>
+            <ul>
+                <li>Do something</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+<!-- Base stations -->
+    
+    
+<br><div class="Spacer_element"></div><br>
+<div class="Flexbox" style="align-items: center;justify-content: center;">
+    <h2>The Base Stations</h2>
+</div>
+<div id="DisplayBaseStations"class="Flexbox Flexbox_Advanced">
+    <img src="_img/Quest 2/tracking.png" >
+
+    <div>
+        <ul>
+            <li>Increase of FOV from 110 to 130 degrees means base stations can see devices much wider allowing to be used in smaller rooms</li>
+            <li>Infrared synchronization that allows to sync with other base stations using IR making the base station cabless (ignoring the power cable)</li>
+            <li>Supports use of 16 total base stations in a single room</li>
+        </ul>
+    </div>
+</div>
+<br>
+<div class="Flexbox" style="justify-content: center;">
+    <button onclick="window.open('https://store.facebook.com/gb/quest/products/quest-2/', '_blank')">Get it now!!!</button>
+</div><br>
+
+<br>
+
+    <script>
+        window.addEventListener("resize", matchHeightsDelay);
+
+        function matchHeightsDelay(){
+            setTimeout(matchHeights("DisplayHeadset"), 10);
+            setTimeout(matchHeights("DisplayControllers"), 10);
+            setTimeout(matchHeights("DisplayBaseStations"), 10);
+
+        }
+
+        function matchHeights(Parent){
+
+            var children = document.getElementById(Parent).children;
+            var height_Change = children[0].offsetHeight;
+
+            for (var i = 1; i < children.length; i++) {
+                var tableChild = children[i];
+                tableChild.style.height = height_Change;
+            }
+    
+        }
+        
+        window.addEventListener('load', (event) => {
+            matchHeightsDelay();
+        });
+    
+
+
+    </script>
+</div>
+</div>
+</body>

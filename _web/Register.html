@@ -1,0 +1,40 @@
+<head>
+    <link rel="stylesheet" href="style_page.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="Flexbox" style="align-items: center;justify-content: center;">
+        <h1>Account Register</h1>
+    </div>
+
+    <p>Register to check out the latest news related to VR headsets, VR games, VR technologies and more!!!</p>
+    <div class="Flexbox" style="align-items: center; justify-content: center;">
+
+        <div class="LoginBox" target="_blank">
+            <p2 id ="Response_Tag"></p2>
+            <h2>Register</h2>
+
+            <div>
+                <p2>Username:</p2>
+                <input style="background-image: url(_img/Login_Register/userIcon.PNG);" type="text" id="Username" required placeholder="Enter your Username or Email">
+
+            </div>
+            <div>
+                <p2>Password:</p2>
+                <input  style="background-image: url(_img/Login_Register/passwordIcon.PNG);" type="password" id="Password" required placeholder="Enter your password">
+            </div>
+            <div>
+                <p2>Verify Password:</p2>
+                <input style="background-image: url(_img/Login_Register/passwordIcon.PNG);" type="password" id="Password_Ver" required placeholder="Enter your password">
+            </div>
+            <div>
+                <a href="Login.html">Have an account already?Sign in here!</a>
+            </div>
+            <br>
+            <button class="submit" onclick="LoginUser_or_Register(true)"type="submit">Register</button>
+        </div>
+
+    </div>
+
+</body>
